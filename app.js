@@ -10,6 +10,7 @@ const tweets = require("./routes/api/tweets");
 const User = require("./models/User");
 const bodyParser = require("body-parser");
 const passport = require("passport");
+const path = require("path");
 
 app.use(passport.initialize());
 require('./config/passport')(passport);
